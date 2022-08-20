@@ -1,165 +1,105 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Search Page</title> 
-    <link rel="icon" href="./Images/food planet.jpg" />
-     <!-- Icon of WebPage -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Linking External CSS  -->
-    <link rel="stylesheet" href="./search.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
+    <h1 style="background-color:aquamarine ;text-align: center;"class="main_h1">Best Places for Breakfast in Maharastra</h1>
     <div class="container">
-        <!-- Heading of the Restaurant -->
-        <div class="heading">Best Places for Breakfast in Maharashtra
-        </div>
+        <!-- <h1>Best Places for Breakfast in Maharastra</h1> -->
+        <div class="filter">
+            <h2 style="background-color:aquamarine;border-radius:5px">filter</h2>
        
-        <!-- Dividing the Page Layout in 2 parts with display property -->
-        <div style="padding-top: 20px;">
-            <!-- Left Div : Filter Block -->
-            <div class="small">
-                <div class="filter-options">
-                    <div class="filter-heading">Filters</div>
-                    <div class="Select-Location">Select Location</div>
-                    <!-- Location DD -->
-                    <select class="Rectangle-2236">
-                        <option>Select</option>
-                        <option>Ahemadnagar</option>
-                        <option>Nashik</option>
-                        <option>Mumbai</option>
-                        <option>Pune</option>
-                    </select>
-                    <!-- Cuisine Checkboxes -->
-                    <div class="Cuisine">Cuisine</div>
-                    <div>
-                        <input type="checkbox" />
-                        <span class="checkbox-items">North Indian</span>
-                    </div>
-                    <div>
-                        <input type="checkbox" />
-                        <span class="checkbox-items">South Indian</span>
-                    </div>
-                    <div>
-                        <input type="checkbox" />
-                        <span class="checkbox-items">Chineese</span>
-                    </div>
-                    <div>
-                        <input type="checkbox" />
-                        <span class="checkbox-items">Fast Food</span>
-                    </div>
-                    <div>
-                        <input type="checkbox" />
-                        <span class="checkbox-items">Street Food</span>
-                    </div>
-                    <!-- Cost for Two radio button options -->
-                    <div class="Cuisine">Cost For Two</div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">Less than &#8377; 500</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 500 to &#8377; 1000</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 1000 to &#8377; 1500</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 1500 to &#8377; 2000</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">&#8377; 2000 +</span>
-                    </div>
-                    <!-- Sort radio button options -->
-                    <div class="Cuisine">Sort</div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">Price low to high</span>
-                    </div>
-                    <div>
-                        <input type="radio" />
-                        <span class="checkbox-items">Price high to low</span>
-                    </div>
-                </div>
+            <div class="location">
+                <p>LOCATION</p>
+
+                
+                <select name="search" id="">
+                    
+                    <option value="">select</option>
+                    <option value="">Ahemadnagar</option>
+                    <option value="">Nasik</option>
+                    <option value="">Mumbai</option>
+                    <option value="">Pune</option>
+                </select>
             </div>
-            <!-- Right Div : Items Block -->
-            <!-- vertical-align: top property to move div at the top -->
-            <div class="big vertical">
-                <!-- Item Block -->
-                <div class="Item">
-                    <div>
-                        <div class="small-item vertical">
-                            <img class="img" src="./Images/chinese.jfif" />
-                        </div>
-                        <div class="big-item">
-                            <div class="rest-name">Aromas of China</div>
-                            <div class="rest-address">Ground Floor New Link Road Veera Desai Road, Mumbai </div>
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <div class="margin-left">
-                            <div class="Bakery">CUISINES : Chineese</div>
-                            <div class="Bakery">COST : &#8377 200 </div>
-                        </div>
-                    </div>                  
-       
-                </div>
-                  <!-- Item Block -->
-        <div class="Item">
-            <div>
-                <div class="small-item vertical">
-                    <img class="img" src="./Images/breakfast.jpg" />
-                </div>
-                <div class="big-item">
-                    <div class="rest-name">South Indian Canteen</div>
-                    <div class="rest-address"> Rasta Peth, Pune</div>
-                </div>
+            <div class="cuisine">
+                <h4>Cuisines</h4>
+                <input type="checkbox" name="" id="">North Indian
+                <br>
+                <input type="checkbox" name="" id="">South Indian
+                <br>
+                <input type="checkbox" name="" id="">Chinese
+                <br>
+                <input type="checkbox" name="" id="">Street Food
+                <br>
+                <input type="checkbox" name="" id="">Fast Food
+
+                
             </div>
-            <hr />
-            <div>
-                <div class="margin-left">
-                    <div class="Bakery">CUISINES : South Indian</div>
-                    <div class="Bakery">COST : &#8377 150 </div>
-                </div>
+            <div class="cost_for_two">
+                <h4>Cost for two</h4>
+                <input type="checkbox" name="" id="">Lessthan 500
+                <br>
+                <input type="checkbox" name="" id="">500 to 1000
+                <br>
+                <input type="checkbox" name="" id="">1000 to 1500
+                <br>
+                <input type="checkbox" name="" id="">1500 to 2000
+                <br>
+                <input type="checkbox" name="" id=""> 2000 +
+               
             </div>
+            <div class="short">
+                <h4>sort</h4>
+                <input type="radio" name="" id="    ">Low to high
+                <br>
+                <input type="radio" name="" id=""> high to low
+            </div>
+
+
+
         </div>
-             </div>
-        
-          
+        <div class="res_container">
+            <div class="container_box">
+                <div class="image">
+                    <img src="Images/chinese.jfif" alt="">
+                </div>
+                <div class="details" >
+                    <div class="name_res">
+
+                        <h1>Aromas of China</h1>
+                        <p>Ground Floor New Link Road Veera Desai Road, Mumbai</p>
+                    </div>
+                    <div class="price_details">
+                         <p>CUISINES : chinese</p>
+                         <p>COST: 200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container_box">
+                <div class="image" >
+                    <img src="Images/breakfast.jpg" alt="">
+                </div>
+                <div class="details" >
+                    <div class="name_res">
+
+                        <h1>South Indian Canteen</h1>
+                        <p>Ground Floor New Link Road Veera Desai Road, Mumbai</p>
+                    </div>
+                    <div class="price_details">
+                         <p>CUISINES : SouthIndian</p>
+                         <p>COST: 150</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     
-        
-
-    </div>
-        <!-- Pagination Block  -->
-        <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">&raquo;</a>
-        </div>
-    </div>
-    <footer>
-        <hr>
-        <h3> HeM'S Kitchen</h3>
-        <div class="fotDiv">
-            <ul>
-                <li>Contact Us</li>
-                <li>About Us</li>
-            </ul>
-        </div>
-
-    </footer>
 </body>
-
 </html>
